@@ -1,0 +1,15 @@
+def specific_difference():
+    n = int(input("Enter a Number :"))
+    d = int(input("Enter Specific Difference :"))
+    low = 1
+    high = n
+    while low < high:
+        mid = (high + low) // 2
+        if mid <= 2:
+            low = mid + 1
+            print("Low :", low)
+        else:
+            high = mid - 1
+    if low > high:
+        print("Result :", (n - high))
+specific_difference()

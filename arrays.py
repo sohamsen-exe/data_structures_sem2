@@ -1,0 +1,15 @@
+from array import *
+array1 = array('i', [10,20,30,40,50,40])
+for x in array1:
+    print(x)
+print()
+print("Minimum :", min(array1))
+print("Maximum :", max(array1))
+print("Sum :", sum(array1))
+print("Average :", sum(array1)/len(array1))
+print()
+print(list(array1[::-1]))
+print()
+array1 = set(array1)
+array1 = array('i', array1)
+print(list(array1))
